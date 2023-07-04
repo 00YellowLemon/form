@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Karla', sans-serif;
+font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding:10px;
+
+}
+article{
+    display: flex;
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.content{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+
+}
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.right,.left{
+    width: 50%;
+    padding: 30px;
+}
+
+.inputs{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.text{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+input{
+    outline: none;
+    border: 1px hsl(246, 25%, 77%) solid;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+}
+svg{
+    position: absolute;
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    display: none;
+}
+input[type=submit]{
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+    
+}
+button{
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 1rem;
+    outline: none;
+    color: white;
+    border: 1px solid  hsl(248, 32%, 49%);
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+button:hover{
+    background-color: hsl(249, 10%, 26%);
+    transform: scale(0.95);
+}
+a{
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+a:hover{
+    text-decoration: underline;
+}
+.right p{
+    color: antiquewhite;
+   
+}
+@media(max-width:760px){
+    .right,.left,.inputs{
+        padding:10px;
+        text-align: center;
+        width: 100%;
+    }
+    .content{
+        display: block;
+    }
+
+}
+@media(max-width:400px){
+    article{
+        background-image: url(bg-intro-mobile.png);
+    }
+    h2{
+        font-size: 22px;
+    }
+
+}
